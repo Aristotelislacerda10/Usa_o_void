@@ -3,10 +3,12 @@
 namespace App;
 
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\SoftDeletes;
 
 class Nfe extends Model
 {
     protected $table = 'nota_fiscal';
+    use SoftDeletes;
     protected $fillable = [
 
         'id_nf','numero_nf', 'bc_icms_nf', 'valor_icms_nf','base_subs_nf','valor_subs_nf','valor_total_prod_nf',

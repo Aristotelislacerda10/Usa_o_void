@@ -3,10 +3,12 @@
 namespace App;
 
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\SoftDeletes;
 
 class Produto extends Model
 {
     protected $table = 'produto';
+    use SoftDeletes;
     protected $fillable = [
 
         'cod_pro','cod_ean1', 'cod_ean2', 'descricao_pro','tipo_emb','cfop_venda','ncm',
