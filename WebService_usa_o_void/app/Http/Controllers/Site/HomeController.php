@@ -13,9 +13,9 @@ class HomeController extends Controller
 {
     public function index(){
         $qtdclientes = Cliente::all()->count();
-        $qtdfornecedores = Fornecedor::count();
-        $qtdvendedores = Vendedor::count();
-        $qtdprodutos = Produto::count();
+        $qtdfornecedores = Fornecedor::all()->count();
+        $qtdvendedores = Vendedor::all()->count();
+        $qtdprodutos = Produto::all()->count();
 
         return view('home', compact('qtdclientes','qtdfornecedores','qtdvendedores','qtdprodutos'));
     }

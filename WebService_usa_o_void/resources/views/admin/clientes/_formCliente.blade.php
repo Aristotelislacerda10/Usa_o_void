@@ -135,6 +135,7 @@
                                     <option value="{{$listaestado->id}}">{{$listaestado->uf}}</option>
 
                                 @endforeach
+
                             </select>
                         </div>
 

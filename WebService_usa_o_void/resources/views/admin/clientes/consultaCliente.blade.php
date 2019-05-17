@@ -64,8 +64,9 @@
             </tbody>
         </table>
     </div>
+
     <div class="container">
-        <div class="row" style="position: relative; left: 50%">
+        <div class="" style="position: absolute; left: 50%">
             {{ $registros->links() }}
         </div>
     </div>
